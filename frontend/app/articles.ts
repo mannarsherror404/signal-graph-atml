@@ -1,0 +1,207 @@
+export type Article = {
+  id: string;
+  category: string;
+  title: string;
+  dek: string;
+  image: string;
+  location: string;
+  readTime: number;
+  published: string;
+  author: string;
+  tags: string[];
+  baseScore: number;
+  body: string[];
+};
+
+export const categories = [
+  "Technology",
+  "Climate",
+  "Business",
+  "Science",
+  "Society",
+  "Culture",
+  "Wellness",
+];
+
+export const articles: Article[] = [
+  {
+    id: "bangalore-mobility-lab",
+    category: "Technology",
+    title: "Inside Bengaluru’s midnight mobility lab",
+    dek: "A small team is teaching city buses to respond to the rhythm of real streets.",
+    image: "/articles/bangalore.png",
+    location: "Bengaluru",
+    readTime: 5,
+    published: "6:40 AM",
+    author: "Mira Sen",
+    tags: ["AI", "Cities", "Transport"],
+    baseScore: 9.8,
+    body: [
+      "At 1:17 in the morning, a wall of maps is still glowing in a converted warehouse near the old market. The team inside is not tracking vehicles so much as the gaps between them: the minutes when a commuter is waiting and the city is not listening.",
+      "Their system combines fixed schedules with signals from weather, road speed and anonymised passenger counts. The goal is deliberately modest—make the next bus feel less like a guess.",
+      "The project remains a pilot, but it offers a useful lesson for public technology: intelligence matters most when it quietly removes friction from an ordinary day.",
+    ],
+  },
+  {
+    id: "delhi-cool-streets",
+    category: "Climate",
+    title: "Delhi is testing streets designed to stay cool",
+    dek: "Shade corridors, pale paving and tiny forests are becoming practical climate tools.",
+    image: "/articles/delhi.png",
+    location: "Delhi",
+    readTime: 4,
+    published: "7:15 AM",
+    author: "Kabir Arora",
+    tags: ["Heat", "Design", "Cities"],
+    baseScore: 9.3,
+    body: [
+      "The hottest part of a summer walk is often the final few hundred metres. A new set of neighbourhood trials treats that short distance as critical infrastructure.",
+      "Designers are combining shade, reflective surfaces and pockets of dense planting. None of the interventions is dramatic on its own; together they can change how a street stores and releases heat.",
+      "Residents will help measure the results through simple temperature sensors and walking diaries over the next season.",
+    ],
+  },
+  {
+    id: "mumbai-housing",
+    category: "Business",
+    title: "The quiet economics reshaping Mumbai’s rental homes",
+    dek: "Smaller buildings are finding new value in shared services and flexible leases.",
+    image: "/articles/mumbai.png",
+    location: "Mumbai",
+    readTime: 6,
+    published: "8:05 AM",
+    author: "Anya Mehta",
+    tags: ["Housing", "Economy", "Urban life"],
+    baseScore: 8.9,
+    body: [
+      "The most visible housing projects arrive with towers and billboards. A subtler shift is happening inside older mid-rise buildings, where owners are experimenting with shared work rooms, common kitchens and shorter leases.",
+      "The model is not a solution to affordability by itself. It is, however, changing the calculation for people who value access over square footage.",
+      "Researchers caution that flexibility must come with predictable terms, transparent fees and meaningful tenant protections.",
+    ],
+  },
+  {
+    id: "pune-open-scanner",
+    category: "Science",
+    title: "Pune students built a medical scanner anyone can repair",
+    dek: "Open hardware could make diagnostic tools easier to maintain far from big hospitals.",
+    image: "/articles/pune.png",
+    location: "Pune",
+    readTime: 7,
+    published: "8:32 AM",
+    author: "Reva Thomas",
+    tags: ["Health", "Open source", "Engineering"],
+    baseScore: 8.7,
+    body: [
+      "A diagnostic machine is only useful while it can be maintained. That simple observation led an engineering group in Pune to design a scanner around replaceable modules and openly documented parts.",
+      "The prototype is still going through safety and accuracy testing. Its most important idea may be the repair manual: a living document written for technicians rather than only manufacturers.",
+      "If the approach survives clinical validation, it could reduce long periods of downtime in smaller health centres.",
+    ],
+  },
+  {
+    id: "srinagar-saffron",
+    category: "Climate",
+    title: "Saffron farmers are mapping a changing season",
+    dek: "In Kashmir, field notes and low-cost sensors are protecting knowledge built over generations.",
+    image: "/articles/srinagar.png",
+    location: "Srinagar",
+    readTime: 5,
+    published: "9:10 AM",
+    author: "Ishaan Wani",
+    tags: ["Agriculture", "Weather", "Tradition"],
+    baseScore: 8.5,
+    body: [
+      "The notebooks begin decades before the sensors. Families recorded the first bloom, the last rain and the days when the soil held just enough moisture.",
+      "Now those observations are being paired with compact weather stations. The data does not replace experience; it makes patterns easier to share across fields and generations.",
+      "The collaboration is building an unusually local climate record—one rooted in the decisions farmers make each morning.",
+    ],
+  },
+  {
+    id: "explainable-ai-student",
+    category: "Technology",
+    title: "The student making AI explain itself",
+    dek: "A visual tool turns a model’s confident answer into a trail people can question.",
+    image: "/articles/technology.png",
+    location: "New Delhi",
+    readTime: 6,
+    published: "9:45 AM",
+    author: "Nila Bose",
+    tags: ["AI", "Research", "Education"],
+    baseScore: 8.2,
+    body: [
+      "Most people meet an AI system at the final answer. Aarav Khanna’s interface starts one step earlier, showing which pieces of evidence most changed a model’s prediction.",
+      "The project does not claim to reveal a model’s thoughts. Instead, it creates practical handles for testing sensitivity, comparing alternatives and spotting brittle reasoning.",
+      "That distinction matters: an explanation should invite scrutiny, not decorate certainty.",
+    ],
+  },
+  {
+    id: "community-kitchens",
+    category: "Society",
+    title: "Community kitchens are redesigning how cities care",
+    dek: "A meal can be infrastructure when neighbours decide to build it together.",
+    image: "/articles/society.png",
+    location: "Ahmedabad",
+    readTime: 4,
+    published: "10:20 AM",
+    author: "Tara Iyer",
+    tags: ["Community", "Food", "Public life"],
+    baseScore: 8,
+    body: [
+      "The kitchen opens before sunrise, but its work extends beyond breakfast. It connects older residents to volunteers, redirects surplus ingredients and gives new cooks a place to learn.",
+      "Organisers resist calling the project charity. Their ambition is mutual reliability: a neighbourhood system people shape and can count on.",
+      "The strongest measure of success may be how quickly a visitor stops feeling like a visitor.",
+    ],
+  },
+  {
+    id: "animation-algorithms",
+    category: "Culture",
+    title: "Hand-drawn animation finds a new life beside algorithms",
+    dek: "Young artists are mixing slow craft with fast tools—and keeping the fingerprints visible.",
+    image: "/articles/culture.png",
+    location: "Kolkata",
+    readTime: 5,
+    published: "10:55 AM",
+    author: "Leela Rao",
+    tags: ["Art", "Animation", "Creative tools"],
+    baseScore: 7.8,
+    body: [
+      "The frames wobble slightly, and that is the point. A new group of independent animators is using software to organise work while preserving the marks that reveal a human hand.",
+      "Automation handles clean-up, timing experiments and repetitive exports. Drawing remains the centre of the practice.",
+      "Their films suggest that the most interesting creative technology may not erase friction—it may help artists choose which friction is worth keeping.",
+    ],
+  },
+  {
+    id: "small-coffee-economy",
+    category: "Business",
+    title: "Why the smallest coffee shops are thinking like networks",
+    dek: "Independent cafés are pooling purchasing, training and data without losing their identity.",
+    image: "/articles/business.png",
+    location: "Jaipur",
+    readTime: 4,
+    published: "11:18 AM",
+    author: "Rohan Malik",
+    tags: ["Small business", "Food", "Networks"],
+    baseScore: 7.6,
+    body: [
+      "A neighbourhood café cannot negotiate like a national chain. Ten cafés working together can begin to.",
+      "Informal purchasing groups are helping owners reduce waste, share staff training and understand which menu changes actually improve margins.",
+      "The collaboration works because the customer-facing experience stays local while the invisible operations become collective.",
+    ],
+  },
+  {
+    id: "resilient-attention",
+    category: "Wellness",
+    title: "Five gentler ways to rebuild a scattered attention span",
+    dek: "The answer may be less about discipline and more about designing calmer defaults.",
+    image: "/articles/wellness.png",
+    location: "Weekend Desk",
+    readTime: 3,
+    published: "11:45 AM",
+    author: "Devika Shah",
+    tags: ["Attention", "Habits", "Wellbeing"],
+    baseScore: 7.4,
+    body: [
+      "Attention rarely disappears all at once. It fragments through tiny interruptions, ambiguous priorities and environments that ask for constant switching.",
+      "Researchers recommend beginning with design rather than willpower: make the next task visible, create a stopping point and protect short intervals of single-purpose time.",
+      "Progress is easier to notice when the goal is not perfect focus, but a reliable return.",
+    ],
+  },
+];

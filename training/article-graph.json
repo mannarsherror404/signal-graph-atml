@@ -1,0 +1,25 @@
+{
+  "description": "Authored demo articles and synthetic reader preferences for a reproducible GCN demonstration. These are not real user interactions.",
+  "articles": [
+    { "id": "bangalore-mobility-lab", "category": "Technology", "tags": ["AI", "Cities", "Transport"] },
+    { "id": "delhi-cool-streets", "category": "Climate", "tags": ["Heat", "Design", "Cities"] },
+    { "id": "mumbai-housing", "category": "Business", "tags": ["Housing", "Economy", "Urban life"] },
+    { "id": "pune-open-scanner", "category": "Science", "tags": ["Health", "Open source", "Engineering"] },
+    { "id": "srinagar-saffron", "category": "Climate", "tags": ["Agriculture", "Weather", "Tradition"] },
+    { "id": "explainable-ai-student", "category": "Technology", "tags": ["AI", "Research", "Education"] },
+    { "id": "community-kitchens", "category": "Society", "tags": ["Community", "Food", "Public life"] },
+    { "id": "animation-algorithms", "category": "Culture", "tags": ["Art", "Animation", "Creative tools"] },
+    { "id": "small-coffee-economy", "category": "Business", "tags": ["Small business", "Food", "Networks"] },
+    { "id": "resilient-attention", "category": "Wellness", "tags": ["Attention", "Habits", "Wellbeing"] }
+  ],
+  "personas": [
+    { "id": "technology-and-research", "likes": ["bangalore-mobility-lab", "explainable-ai-student", "pune-open-scanner", "animation-algorithms"] },
+    { "id": "climate-and-cities", "likes": ["delhi-cool-streets", "srinagar-saffron", "bangalore-mobility-lab", "mumbai-housing"] },
+    { "id": "urban-business", "likes": ["mumbai-housing", "small-coffee-economy", "bangalore-mobility-lab", "delhi-cool-streets"] },
+    { "id": "health-and-wellness", "likes": ["pune-open-scanner", "resilient-attention", "community-kitchens", "srinagar-saffron"] },
+    { "id": "community-and-culture", "likes": ["community-kitchens", "animation-algorithms", "small-coffee-economy", "resilient-attention"] },
+    { "id": "ai-and-creative-tools", "likes": ["explainable-ai-student", "animation-algorithms", "bangalore-mobility-lab", "pune-open-scanner"] },
+    { "id": "food-and-neighbourhood", "likes": ["community-kitchens", "small-coffee-economy", "mumbai-housing", "resilient-attention"] },
+    { "id": "science-and-climate", "likes": ["pune-open-scanner", "delhi-cool-streets", "srinagar-saffron", "explainable-ai-student"] }
+  ]
+}
